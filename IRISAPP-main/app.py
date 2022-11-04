@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd 
 
 from sklearn import datasets 
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.naive_bayes import GaussianNB
 
 st.write("""
 **Flor Iris **
@@ -33,7 +33,7 @@ iris = datasets.load_iris()
 X = iris.data
 Y = iris.target
 
-clf = RandomForestClassifier()  
+clf = GaussianNB()  
 clf.fit(X,Y)
 
 prediction = clf.predict(df)
