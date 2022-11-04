@@ -34,30 +34,6 @@ X = iris.data
 Y = iris.target
 
 
-if resultado == ('Iris-setosa'): 
-
-st.write('setosa') 
-
-st.image('iris_setosa.jpg') 
-
- 
-
-if resultado == ('Iris-versicolor'): 
-
-st.write('versicolor') 
-
-st.image('iris_versicolor.jpg') 
-
- 
-
-if resultado == ('Iris-virginica'): 
-
-st.write('virginica') 
-
-st.image('iris_virginica.jpg') 
-
-
-
 clf = GaussianNB()  
 clf.fit(X,Y)
 
@@ -72,3 +48,26 @@ st.write(iris.target_names[prediction])
 
 st.subheader('Probabilidade')
 st.write(prediction_proba)
+
+if resultado == ('Iris-setosa'): 
+
+st.write('setosa') 
+
+st.image('setosa.png') 
+
+ 
+
+if resultado == ('Iris-versicolor'): 
+
+st.write('versicolor') 
+
+st.image('versicolor.png') 
+
+ 
+
+if resultado == ('Iris-virginica'): 
+
+st.write('virginica') 
+
+st.image('virginica.png') 
+
